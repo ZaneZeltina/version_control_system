@@ -1,0 +1,37 @@
+2. Установка и настройка Git.
+
+# вызов краткой справки / проверка установки Git
+git
+git -h
+git --help
+
+2. 2. Установка и настройка Git: Вторая часть.
+
+Команда git config управляет настройками Git на уровне системы, пользователя или текущего репозитория.
+
+# установка глобального пользователя Git (для всех проектов)
+git config --global user.name "ZaneZeltina"
+
+# установка глобального email пользователя Git (для всех проектов)
+git config --global user.email "zanezeltina32@inbox.lv"
+
+# включение цветного вывода информации (в ряде случаев включено по умолчанию)
+git config --global color.ui true
+
+# установка локальной настройки Git (для конкретного репозитория)
+git config user.name "ZaneZeltina"
+git config user.email "zanezeltina32@inbox.lv"
+
+# вывод имени пользователя/email из глобальных настроек
+git config --global user.name
+git config --global user.email
+
+# вывод имени пользователя/email из локальных настроек (для конкретного репозитория)
+git config user.name
+git config user.email
+
+# вывод списка всех настроек Git (глобальных и локальных)
+git config --list
+
+# вывод истории команд в терминале (bash)
+history
