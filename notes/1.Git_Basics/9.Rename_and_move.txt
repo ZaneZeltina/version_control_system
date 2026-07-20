@@ -1,0 +1,36 @@
+9. Переименование/перемещение файлов.
+
+Команда git mv перемещает или переименовывает файлы в рабочем каталоге и одновременно обновляет индекс Git,
+подготавливая это изменение для следующего коммита.
+
+# переименование файла в терминале
+mv page1.html index.html
+
+# набор команд для корректного переименования в Git
+mv page1.html index.html
+git add index.html
+git rm page1.html
+
+# переименование/перемещение файла в Git одной командой
+git mv page1.html index.html
+
+# вызов справки
+git mv --help
+
+# создаем папку styles
+mkdir styles
+
+# перемещаем файл с CSS-стилями в новую папку
+git mv styles.css styles
+
+# делаем коммит
+git commit -m "create folder for css styles"
+
+# переименование папки в Git
+git mv styles css
+
+# создаем папку pages
+mkdir pages
+
+# перемещение набора файлов
+git mv *.html pages
